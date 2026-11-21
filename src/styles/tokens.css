@@ -1,0 +1,88 @@
+/* ───────────────────────── Fonts (latin subsets, bundled) ───────────────────────── */
+@font-face {
+  font-family: 'Fraunces';
+  src: url('../fonts/fraunces-latin-opsz-normal.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Fraunces';
+  src: url('../fonts/fraunces-latin-opsz-italic.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Instrument Sans';
+  src: url('../fonts/instrument-sans-latin-wght-normal.woff2') format('woff2-variations');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Plex Mono';
+  src: url('../fonts/ibm-plex-mono-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+  DESIGN SYSTEM — "A small constellation"
+  ───────────────────────────────────────
+  Night (scenes I–III) → Dawn (scene IV). One motif: the four-point star.
+
+  Primary    ink #0A0E1C · ivory #F4EEE3 · champagne #D8BE8E
+  Secondary  lavender #A99CCB · dusk #5E5689 · plum #3E2B4D · paper #EFE5D3
+  Display    Fraunces (optical size axis; italic carries emotion, upright carries the name)
+  Body       Instrument Sans
+  Labels     Plex Mono, uppercase, wide tracking — the "editorial" voice
+  Motion     Things arrive with expo.out (decisive, then gentle). Scenes change with
+             power2.inOut. Nothing bounces except the wax seal under a finger.
+*/
+:root {
+  --ink: #0a0e1c;
+  --ink-2: #121731;
+  --ink-3: #1b2142;
+  --ivory: #f4eee3;
+  --paper: #efe5d3;
+  --paper-deep: #e4d6bd;
+  --champagne: #d8be8e;
+  --gold: #b48f55;
+  --lavender: #a99ccb;
+  --dusk: #5e5689;
+  --plum: #3e2b4d;
+  --text-on-ink: rgba(244, 238, 227, 0.92);
+  --mist: rgba(244, 238, 227, 0.8);
+  --hair: rgba(244, 238, 227, 0.14);
+  --ink-text: #1a1830;
+
+  --f-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --f-body: 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --f-mono: 'Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* 4-pt spacing scale */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+
+  --gutter: clamp(20px, 5vw, 56px);
+
+  /* fluid type */
+  --t-label: 11.5px;
+  --t-body: clamp(16px, 1.05rem, 18px);
+  --t-lead: clamp(21px, 5.2vw, 30px);
+  --t-h2: clamp(30px, 8vw, 58px);
+  --t-hero: clamp(64px, 24vw, 260px);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-io: cubic-bezier(0.65, 0, 0.35, 1);
+}
